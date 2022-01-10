@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        canvas {
+            border: 8px solid #62ecb2;
+            background-color: #62ecb2;
+        }
+
+        span {
+
+            padding: 5px 16px 7px 16px;
+            font-size: 30px;
+            margin-left: 10px;
+            border-radius: 35px;
+            background-color: #2eebcc;
+            color: white;
+        }
+
+        select {
+            border-radius: 20px;
+            padding: 7px 6px 6px 6px;
+            font-size: 27px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #28a1b1;
+            color: white;
+            border: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="canvas" height="660px" width="900px"></canvas>
+
+    <div>
+
+        <form action="">
+            <h1 style="display: inline-block; color: rgb(5, 36, 83);">Select level : </h1>
+            <select name="Level" id="level">
+                <option value="first">Easy</option>
+                <option value="second">Medium</option>
+                <option value="third">Hard</option>
+            </select>
+
+            <span id="start">Start</span>
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
