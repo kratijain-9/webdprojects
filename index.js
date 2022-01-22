@@ -19,7 +19,7 @@ io.on('connection', (socket) => { // connection is the name of an event
 
     // on is used to listen for the event 
     socket.on('send-msg',(d)=>{
-        socket.emit('rec-msg',{
+        io.emit('rec-msg',{
             msg:d.msg,
             username:users[socket.id]
         })
